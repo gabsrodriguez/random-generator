@@ -8,30 +8,36 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
 		integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-	<title>The Excuse Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <title>The Excuse Generator</title>
 </head>
 
 <body>
-	<div class="jumbotron text-center">
+	<div class="jumbotron text-center bg-white">
 		<h1 class="display-4">Excuse Generator</h1>
-		<p>OMG!!! You would never believe me but</p>
+		<p>OMG You would never believe me but</p>
 		<hr class="my-4">
 		<span id="p1"></span>
         <span id="p2"></span>
         <span id="p3"></span>
+        <div>
+            <img id="img1" src="https://cdn.pixabay.com/photo/2016/08/23/16/59/santa-claus-1614994__480.png" alt="" width="200" height="300">
+        </div>
         <div>
 		    <a class="btn btn-primary btn-lg m-4" href="#" role="button" onclick="makeExcuse()">Generate</a>
         </div>
 	</div>
 
 	<script>
-            function makeExcuse(){
 		    var excusesNoun=["My dog", "My grandma", "A Kangaroo", "Santa"];
             var excusesPronoun=["ate", "kicked", "stole", "ate"];
             var excusesVerb=["my homework", "my car", "my head", "my shoes"];
-                document.querySelector("#p1").innerHTML=excusesNoun[Math.floor(Math.random() * excusesNoun.length)]
-                document.querySelector("#p2").innerHTML=excusesPronoun[Math.floor(Math.random() * excusesPronoun.length)]
-                document.querySelector("#p3").innerHTML=excusesVerb[Math.floor(Math.random() * excusesVerb.length)]
+            var image=["https://cdn.pixabay.com/photo/2016/08/23/16/59/santa-claus-1614994__480.png","https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__480.jpg", "https://cdn.pixabay.com/photo/2013/07/12/18/39/grandmother-153657__480.png","https://cdn.pixabay.com/photo/2018/12/01/18/12/box-3849936__480.jpg"];
+            function makeExcuse(){
+                document.querySelector("#p1").innerHTML=excusesNoun[Math.floor(Math.random() * excusesNoun.length)];
+                document.querySelector("#p2").innerHTML=excusesPronoun[Math.floor(Math.random() * excusesPronoun.length)];
+                document.querySelector("#p3").innerHTML=excusesVerb[Math.floor(Math.random() * excusesVerb.length)];
+                document.querySelector("#img1").src=image[Math.floor(Math.random() * image.length)];
         }
     </script>
 
