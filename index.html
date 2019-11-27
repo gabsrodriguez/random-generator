@@ -16,6 +16,14 @@
 
 <body>
 	<div class="main text-center">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="addSoemething()">Try it</button>
+                </div>
+                <input id="myInput" value="" type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+
+
         <div class="row">
             <div class="col firstCol">
                 <h1 class="display-4">Excuse Generator</h1>
@@ -30,7 +38,7 @@
                 <div class="picture">
                     <img id="img1" class="image-responsive" src="https://cdn.pixabay.com/photo/2016/08/23/16/59/santa-claus-1614994__480.png" alt="">
                 </div>
-            </div>   
+            </div>  
         </div>
 	</div>
 
@@ -47,7 +55,7 @@
                                 {noun: "Santa",
                                 image: "https://cdn.pixabay.com/photo/2016/08/23/16/59/santa-claus-1614994__480.png"}
                             ];
-            var excusesPronoun=["ate", "kicked", "stole", "ate"];
+            var excusesPronoun=["ate", "kicked", "stole", "shot"];
             var excusesVerb=["my homework", "my car", "my head", "my shoes"];
             
             function makeExcuse(){
@@ -60,10 +68,10 @@
                     document.querySelector("#p3").innerHTML=excusesVerb[end]    
                }
 
-               function myFunction() {
-                    ExcuseproNoun.push("apple");
-                        document.getElementById("demo").innerHTML = fruits;
-}
+               function addSoemething(){
+                    var inputValue= document.querySelector("#myInput").value;
+                   excusesPronoun.push(inputValue);
+               }
     </script>
 
 
