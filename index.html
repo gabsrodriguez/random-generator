@@ -23,6 +23,14 @@
                 <input id="myInput" value="" type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
             </div>
 
+            <div class="main text-center">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="addSoemething()">Try it</button>
+                </div>
+                <input id="myInput2" value="" type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+
 
         <div class="row">
             <div class="col firstCol">
@@ -71,6 +79,10 @@
                function addSoemething(){
                     var inputValue= document.querySelector("#myInput").value;
                    excusesPronoun.push(inputValue);
+               }
+               function addSoemething(){
+                    var inputValue2= document.querySelector("#myInput2").value;
+                   excusesVerb.push(inputValue2);
                }
     </script>
 
