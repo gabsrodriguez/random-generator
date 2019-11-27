@@ -1,3 +1,12 @@
+.firstCol{
+    height: 100vh;
+    background-color: #A998FF;
+}
+.secondCol{
+    padding: 0px;
+    height: 100vh;
+}
+
 h1{
     font-family: 'Amatic SC', cursive;
 }
@@ -12,7 +21,7 @@ h1{
     font-family: 'Lato', sans-serif; 
 }
 
-hr { 
-    border-color: linear-gradient(to right, #ff66cc 0%, #0099ff 100%);
-
+#img1{
+    height: 100vh;
+    width: 100vh;
 }
