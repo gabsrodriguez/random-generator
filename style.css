@@ -1,6 +1,6 @@
 .firstCol{
     height: 100vh;
-    background-color: #A998FF;
+    
 }
 .secondCol{
     padding: 0px;
@@ -8,7 +8,9 @@
 }
 
 h1{
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Monoton', cursive;
+    
 }
 .openingLine,{
     font-family: 'Amatic SC', cursive;

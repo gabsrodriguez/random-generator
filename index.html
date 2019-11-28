@@ -8,32 +8,15 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
 		integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>The Excuse Generator</title>
 </head>
 
 <body>
 	<div class="main text-center">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="addSoemething()">Try it</button>
-                </div>
-                <input id="myInput" value="" type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-            </div>
-
-            <div class="main text-center">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="addSoemething()">Try it</button>
-                </div>
-                <input id="myInput2" value="" type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-            </div>
-
-
         <div class="row">
-            <div class="col firstCol">
+            <div class="col firstCol mt-5">
                 <h1 class="display-4">Excuse Generator</h1>
                 <span id="p1"></span>
                 <span id="p2"></span>
@@ -41,8 +24,26 @@
                 <div class="button">
                     <a class="btn btn-primary btn-lg m-4" href="#" role="button" onclick="makeExcuse()">Generate</a>
                 </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="input-group ml-3">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="addSoemething()">Try it</button>
+                            </div>
+                            <input id="myInput" value="" type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="addSoemething()">Try it</button>
+                            </div>
+                            <input id="myInput2" value="" type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col secondCol">
+            <div class="col-6 secondCol">
                 <div class="picture">
                     <img id="img1" class="image-responsive" src="https://cdn.pixabay.com/photo/2016/08/23/16/59/santa-claus-1614994__480.png" alt="">
                 </div>
@@ -52,16 +53,16 @@
 
 	<script>
 		    var excusesNoun=[   {noun: "My dog", 
-                                image: "https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__480.jpg"},
+                                image: "https://cdn.pixabay.com/photo/2019/08/19/07/45/pets-4415649__480.jpg"},
                             
                                 {noun: "My grandma", 
-                                image: "https://cdn.pixabay.com/photo/2013/07/12/18/39/grandmother-153657__480.png"},
+                                image: "https://cdn.pixabay.com/photo/2017/10/03/09/02/lady-2811666__480.jpg"},
                             
                                 {noun: "A Kangaroo", 
-                                image: "https://cdn.pixabay.com/photo/2018/12/01/18/12/box-3849936__480.jpg"},
+                                image: "https://cdn.pixabay.com/photo/2016/02/05/04/49/australia-1180394__480.jpg"},
 
                                 {noun: "Santa",
-                                image: "https://cdn.pixabay.com/photo/2016/08/23/16/59/santa-claus-1614994__480.png"}
+                                image: "https://cdn.pixabay.com/photo/2017/12/10/20/53/santa-clause-3010837__480.jpg"}
                             ];
             var excusesPronoun=["ate", "kicked", "stole", "shot"];
             var excusesVerb=["my homework", "my car", "my head", "my shoes"];
