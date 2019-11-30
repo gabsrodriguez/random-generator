@@ -1,29 +1,20 @@
-.firstCol{
-    height: 100vh;
-    
+body{
+     background-color: #cccccc
 }
-.secondCol{
-    padding: 0px;
-    height: 100vh;
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2018/10/06/13/33/pen-3727882__480.jpg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1{
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Monoton', cursive;
-    
-}
-.openingLine,{
-    font-family: 'Amatic SC', cursive;
-    font-family: 'Lato', sans-serif;
-    font-size: 10px;
-}
-
-#p1,p2,p3{
-   font-family: 'Amatic SC', cursive;
-    font-family: 'Lato', sans-serif; 
+    margin-top: 15%;
 }
 
 #img1{
-    height: 100vh;
-    width: 100vh;
+    width: 250px;
+    height: 250px;
 }
