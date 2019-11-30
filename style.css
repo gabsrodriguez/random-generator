@@ -11,7 +11,14 @@ body{
 }
 
 h1{
-    margin-top: 15%;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: #FBDB0C;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.spans{
+    margin-left: 10%;
 }
 
 #img1{
